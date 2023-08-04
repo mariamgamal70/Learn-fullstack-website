@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+  box-sizing: border-box;
+
+/* font-family: 'Jura', sans-serif; */
+font-family: 'Jura', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
+  font-weight: 700;
+}
+#logo{
+font-size: 40px;
+color:white
+}
+
+.intro{
+  background-image: URL("./images/facu-montanaro-Cm8YFLxaGww-unsplash.jpg");
+  height: 100dvh;
+  background-size: cover;
+}
+.intro div{
+  position: relative;
+  top:40%;
+}
+
+.removebullets ,
+.socialmediaicons{
+  list-style-type: none;
+}
+.removebullets li ,
+.socialmediaicons li{
+  padding:0 10px;
+  position: relative;
+}
+.removebullets a ,.socialmediaicons a{
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  color:white;
+}
+#signin-navbar:hover {
+  box-shadow: 0 0 40px rgba(206, 109, 255, 5);
+  background-color: #9932cc;
+    border-radius: 10px;
+    color: white;
+}
+
+.rightsidenav li:hover:not(:last-child){
+  transition: all 0.5s;
+  border-bottom: 2px solid rgb(206, 109, 255);
+  box-shadow: 0 0 20px rgba(206, 109, 255, .5);
+}
+
+.second-navbar,section{
+  border-bottom: 2px solid rgb(206, 109, 255);
+    box-shadow: 0 0 40px rgba(206, 109, 255, 5);
+}
+
+.socialmediaicons li{
+ width: 50px;
+ height: 50px;
+}
+
+.socialmediaicons a,.introbutton a{
+  width: fit-content;
+  height: fit-content;
+  z-index: 100;
+}
+
+#githubicon a::before,
+#stackoverflowicon a::before,
+#youtubeicon a::before,
+#twittericon a::before,
+#linkedinicon a::before, 
+#facebookicon a::before, 
+#navericon a::before
+/* ,.introbutton a::before */
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+#githubicon a::before{
+  background: linear-gradient(to bottom, #343333 0%, #343333 100%);
+}
+#stackoverflowicon a::before{
+  background: linear-gradient(to bottom, #ff9900 0%, #ff9900 100%);
+}
+#youtubeicon a::before{
+  background: linear-gradient(to bottom, #ff0000 0%, #ff0000 100%);
+}
+#twittericon a::before{
+  background: linear-gradient(to bottom, #00d9ff 0%, #00d9ff 100%);
+}
+#linkedinicon a::before{
+  background: linear-gradient(to bottom, #100291 0%, #100291 100%);
+}
+#facebookicon a::before{
+  background: linear-gradient(to bottom, #305aff 0%, #305aff 100%);
+}
+#navericon a::before {
+  background: linear-gradient(to bottom, #02ff20 0%, #02ff20 100%);
+}
+
+.introbutton:hover a {
+  background-color:#9932cc ;
+  border-radius: 10px;
+  color: white;
+}
+
+#githubicon:hover a::before ,
+#stackoverflowicon:hover a::before,
+#youtubeicon:hover a::before,
+#twittericon:hover a::before,
+#linkedinicon:hover a::before,
+#facebookicon:hover a::before,
+#navericon:hover a::before
+{
+height: 100%;
+}
+
+/* #githubicon:hover i,
+#stackoverflowicon:hover i,
+#youtubeicon:hover i,
+#twittericon:hover i,
+#linkedinicon:hover i,
+#facebookicon:hover i,
+#navericon:hover i
+{
+  color: white;
+  transition: all 0.5s;
+} */
+
+.introbutton a{
+  text-decoration: none;
+  color: darkorchid;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  height: 100%;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.introbutton {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: flex;
+}
+
+.float-left{
+  position: relative;
+  float: left;
+}
+.float-right{
+  position: relative;
+  float:right;
+}
+.service-divs{
+  height: 100px;
+  width:40dvw;
+  padding: 20px;
+  margin:40px;
+    box-shadow: 0 0 10px rgba(206, 109, 255, 5);
+}
+
+.securitydiv{
+  width: 20dvw;
+  height: 30dvh;
+  color:rgb(99, 97, 97);;
+  background-color: white;
+  text-align: center;
+  margin:  20px;
+  border-radius: 5px;
+  padding:10px;
+  border-style: solid;
+  border-color: rgb(187, 186, 186);;
+  border-width: 0.5px;
+  box-shadow: 6px 6px 8px #d3d3d3,
+    -6px -6px 8px #ededed;
+}
+
+.aep-div{
+  width: 40dvw;
+  margin:0 30px;
+}
+
+.securitydiv img{
+  width:15dvw ;
+}
+.aem-div{
+  background-color: #00d9ff;
+  margin:15px 0 ;
+}
+
+.enginelist{
+  display: none;
+}
+
+.securitydiv:hover .enginelist{
+  display: block;
+  transition: all 1s ease
+}
+.securitydiv:hover .engineimg{
+  display: none;
+  transition: all 1s ease
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  margin:50px 0;
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #d70fb3;
+  color: white;
+  box-shadow: 0 0 15px #d70fb3;
+  text-shadow: 0 0 1.5rem white, 0 0 3.5rem white, 0 0 5rem white, 0 0 7rem #ff00de, 0 0 8rem #ff00de, 0 0 10rem #ff00de, 0 0 12rem #ff00de, 0 0 15rem #ff00de;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #2411CB;
+  color: white;
+  transform: rotateY(180deg);
+  box-shadow: 0 0 15px #2411CB
+}
+h1{
+  text-shadow: 0 0 1.5rem white, 0 0 3.5rem white, 0 0 5rem white, 0 0 7rem #ff00de, 0 0 8rem #ff00de, 0 0 10rem #ff00de, 0 0 12rem #ff00de, 0 0 15rem #ff00de;
+}
+
+.signindiv, .signupform{
+  box-shadow: 0 0 15px #d70fb3;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.signindiv button ,.signupform button{
+  background-color: #d70fb3;
+  color: white;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.signindiv button:hover,
+.signupform button:hover{
+  box-shadow: 0 0 15px #d70fb3;
+  background-color: white;
+    color: #d70fb3;
+}
+
+.signinsection, .signupsection{
+  background-image: url("./images/neonbg.jpg");
+}
+
+.track-divs{
+  width: 300px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding:10px;
+  margin:10px
+}
